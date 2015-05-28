@@ -1,0 +1,19 @@
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				{% if page.img-evb == null %}
+					<img class="img-responsive img-rounded" src="{{site.url}}/img/evb-td1208.jpg">  					
+				{% else %}  
+					<img class="img-responsive img-rounded" src="{{ page.img-evb | prepend: site.url }}">				
+				{% endif %}
+			</div>
+			<div class="col-md-6">
+				<h2>EVB features</h2>
+				<p>The TD modules Evaluation Board provides a development and demonstration platform for Telecom Design TD SIGFOXTM gateway modules and software tools.</p>
+				<p>The EVB breaks all available module pins on standard pitch headers, along with a convenient SMA connector for plugin a common half wave swivel antenna.</p>
+				<p>The EVB can be connected to a PL using an included USB serial adapter cable.</p>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,103 @@
+---
+layout: page
+title: TD next - 1st Sigfox certified modules
+excerpt: Our EVB are the best way to test and use TD next's Sigfox modules
+name: evb
+permalink: /evb/
+h1: Evaluation Board, plug it and send!
+---
+
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<h2>I have an EVB</h2>
+					<p>Start playing after registrering your</br>Evaluation Board.</p>
+					<p><a target=_blank class="button-grey-xl" style="width:100%;" href="https://developers.insgroup.fr/dashboards/device.html" role="button"><i class="fa fa-gamepad fa-3x"></i></a></p>
+
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+				<h2>I have no EVB</h2>
+				<p>Buy one from our partner disributor</br>Avnet Memec.</p>
+				<p><a target=_blank class="button-grey-xl" style="width:100%;" href="http://www.avnet-memec.eu/suppliers/telecom-design.html" role="button"><i class="fa fa-shop fa-3x"></i></a></p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="bg-grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img class="img-responsive img-rounded" src="{{site.url}}/img/evb.png">
+			</div>
+			<div class="col-md-6">
+				<h2>The solution for a soft learning curve!</h2>
+				<p>Our EVB are the best way to test and use TD next's Sigfox modules. For each module, we provide a complete starter kit<sup>(1)</sup> with an EVB "out of the box". With it, you will be able to send your first messages through the Sigox network without pain. A simple terminal emulator is required to send messages with extended AT commands.</p>
+				<p style="font-size:12px;"><i><sup>(1)</sup>Included: an EVB with a TD12xx module of your choice, an antenna, an FTDI cable for connecting to a PC or a MAC, 1 year of susbscription to the Sigfox network, an access of 1 year to the TD next developer backend. In order to create your own applications and code into the module, an extra adapter is also provided, but the purchase of an additionnal STK3300 Energy Micro EFM32 starter kit is required. Please check our <a href="{{site.url}}/sdk/">SDK</a>.</i></p>
+			</div>
+		</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Quick Start</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h3>1 - Driver install/setup</h3>
+				<h4>On Linux OS</h4>
+				<p>Latest common distros (debian based) comes with FTDI drivers installed, so one can get to step 2, or check this site for more information.</p>
+				<h4>On Mac OS</h4>
+				<p>Install the latest fdti VPC driver by downloading the bundle image available here. No restart required.</p>
+				<h4>On WinX</h4>
+				<p>Install the latest fdti VPC driver by downloading the install exe available here.</p>
+			</div>
+			<div class="col-md-4">
+				<h3>2 - Open a term session</h3>
+				<h4>On Linux OS</h4>
+					{% highlight ruby %}
+screen /dev/ttyUSB0
+					{% endhighlight %}
+				<h4>On Mac OS</h4>
+					{% highlight ruby %}
+screen /dev/tty.usbserial-XXXXX
+					{% endhighlight %}
+				<h4>On WinX</h4>
+				<p>Start an hyperterminal session using HyperTerm / PuTTy or your favorite terminal session editor.</p>
+			</div>
+			<div class="col-md-4">
+				<h3>3 - Your first message</h3>
+				<h4>Check if the system is running</h4>
+					{% highlight ruby %}
+ATZ
+OK
+
+					{% endhighlight %}
+				<h4>Get module information</h4>
+					{% highlight ruby %}
+AT&V
+Hardware Version: 0F
+Software Version: SOFT1100
+S/N: 0000XXXX
+ACTIVE PROFILE
+E1 V1 Q0 X1 S200:0 S300:24 S301:2 S302:14 S303:1
+
+OK
+					{% endhighlight %}
+				<h4>Send "Hello" to mobile 0601020304</h4>
+				{% highlight ruby %}
+AT$DP=1,0601020304
+OK
+AT$SSMS=Hello
+OK
+					{% endhighlight %}
+
+			</div>
+		</div>
+	</div>
+</section>

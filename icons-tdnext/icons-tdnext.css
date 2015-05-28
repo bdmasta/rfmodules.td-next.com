@@ -1,0 +1,71 @@
+/*
+  Icon Font: icons-tdnext
+*/
+
+@font-face {
+  font-family: "icons-tdnext";
+  src: url("./icons-tdnext_2b89c133726ed4afffa68cb334117166.eot");
+  src: url("./icons-tdnext_2b89c133726ed4afffa68cb334117166.eot?#iefix") format("embedded-opentype"),
+       url("./icons-tdnext_2b89c133726ed4afffa68cb334117166.woff") format("woff"),
+       url("./icons-tdnext_2b89c133726ed4afffa68cb334117166.ttf") format("truetype"),
+       url("./icons-tdnext_2b89c133726ed4afffa68cb334117166.svg#icons-tdnext") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "icons-tdnext";
+    src: url("./icons-tdnext_2b89c133726ed4afffa68cb334117166.svg#icons-tdnext") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.fa-add_developer:before,
+.fa-butterfly:before,
+.fa-certifications:before,
+.fa-cloud:before,
+.fa-electronic:before,
+.fa-gamepad:before,
+.fa-geolocation:before,
+.fa-github:before,
+.fa-network:before,
+.fa-protocols:before,
+.fa-sdk:before,
+.fa-sensor:before,
+.fa-shop:before,
+.fa-smartphone:before,
+.fa-wireless:before,
+.fa-worm:before {
+  display: inline-block;
+  font-family: "icons-tdnext";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.fa-add_developer:before { content: "\f105"; }
+.fa-butterfly:before { content: "\f11d"; }
+.fa-certifications:before { content: "\f115"; }
+.fa-cloud:before { content: "\f106"; }
+.fa-electronic:before { content: "\f10b"; }
+.fa-gamepad:before { content: "\f107"; }
+.fa-geolocation:before { content: "\f11a"; }
+.fa-github:before { content: "\f108"; }
+.fa-network:before { content: "\f10c"; }
+.fa-protocols:before { content: "\f10d"; }
+.fa-sdk:before { content: "\f11b"; }
+.fa-sensor:before { content: "\f119"; }
+.fa-shop:before { content: "\f11f"; }
+.fa-smartphone:before { content: "\f10f"; }
+.fa-wireless:before { content: "\f110"; }
+.fa-worm:before { content: "\f118"; }
