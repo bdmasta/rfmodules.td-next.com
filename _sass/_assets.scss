@@ -66,7 +66,7 @@ footer {
   user-select: none;
   background-image: none;
   border: 2px solid transparent;
-  border-radius: 5px;
+  border-radius: 3px;
   text-transform:uppercase;
 
   &:hover, &:focus {
@@ -117,8 +117,8 @@ footer {
     color: $grey-color-medium;
     background-color:transparent;
     &:hover, &:active, &:focus {
-        border-color:$brand-color;
-        color:$brand-color;
+        border-color:$grey-color;
+        color:$grey-color;
     }
 }
 
@@ -127,6 +127,10 @@ footer {
     @extend .button-o-grey;
 }
 
+.button-o-grey-xxl {
+    @extend .button-xxl;
+    @extend .button-o-grey;
+}
 
 .button-o-white {
     @extend .button;
@@ -145,4 +149,34 @@ footer {
 .button-o-white-xxl {
     @extend .button-xxl;
     @extend .button-o-white;
+}
+
+.button-red {
+  @extend .button;
+  border-color: $brand-color;
+  background-color: $brand-color;
+  color:#ffffff;
+
+  &:hover, &:focus {
+      border: 2px solid $brand-color-dark;
+      background-color: $brand-color-dark;
+      color:#ffffff;
+  }
+
+}
+
+.button-red-xl {
+  @extend .button-xl;
+  @extend .button-red;
+  &:hover, &:focus {
+   border:2px solid $brand-color;
+  }
+}
+
+.button-red-xxl {
+  @extend .button-xxl;
+  @extend .button-red;
+  &:hover, &:focus {
+   border:2px solid $brand-color;
+  }
 }

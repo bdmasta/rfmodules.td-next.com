@@ -48,7 +48,7 @@
 
 
 </footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="{{site.url}}/js/classie.js"></script>
@@ -56,6 +56,7 @@
 	<script src="{{site.url}}/js/jquery.anchorscroll.min.js"></script>
 
 	<script src="{{site.url}}/js/tdnext.js"></script>
+	
 
 	<script type="text/javascript">
 		$('a[href^="#"]').anchorscroll(
@@ -72,4 +73,10 @@
 
 	  ga('create', 'UA-62778372-1', 'auto');
 	  ga('send', 'pageview');
+	</script>
+
+	<script>
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
 	</script>
