@@ -4,8 +4,8 @@ jQuery(function($){
     thumbListId: "thumbs",
     imgViewerId: "viewer",
     activeClass: "active",
-    activeTitle: "Displaying",
-    loaderTitle: "Loading...",
+    activeTitle: "Photo en cours de visualisation",
+    loaderTitle: "Chargement en cours",
     loaderImage: "../img/gallery/loader.gif"
   };
 
@@ -18,7 +18,7 @@ jQuery(function($){
     loader = $(document.createElement("img")).attr({
       alt: settings.loaderTitle,
       title: settings.loaderTitle,
-      src: settings.loaderImage,
+      src: settings.loaderImage
     });
 
   highlight(firstThumbLink);
@@ -27,7 +27,7 @@ jQuery(function($){
     $(document.createElement("div"))
       .attr("id",settings.imgViewerId)
       .append(
-        $(document.createElement("img")).addClass("img-responsive img-rounded marginauto").attr({
+        $(document.createElement("img")).addClass("img-responsive img-rounded").attr({
           alt: "",
           src: firstThumbLink.attr("href")
         })

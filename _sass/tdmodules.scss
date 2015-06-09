@@ -1,7 +1,23 @@
+
+.topbar {
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:0.500em 0 0.500em 0;
+  background-color: $grey-color-ultralight;
+  z-index:10000;
+
+  .topbar-inner {
+    @include font-size (12px);
+  }
+
+}
+
+
 .page-title {font-weight:300;}
 
 .navbar-default {
-    margin-top:42px;
+    margin-top:40px;
     background-color: #ffffff;
     border-color: transparent;
     .navbar-brand {
@@ -91,7 +107,7 @@
         color:#ffffff;
         &:hover, &:active, &:focus {
             background-color:transparent;
-            text-decoration:underline;
+            text-decoration:none;
         }
     }
 
@@ -307,5 +323,22 @@
     }
 }
 
-#viewer {position:relative; width:700px; height:465px; margin-left:30px;}
-#viewer img[src*="loader"] {position:absolute; left:50%; top:50%; margin:-15px 0 0 -15px;}
+
+#viewer {
+  position:relative;
+  width:17.750em;
+  height:11.766em;
+  margin:auto;
+  img[src*="loader"] {
+    position:absolute;
+    left:50%;
+    top:50%;
+  }
+}
+
+@media(min-width:768px) {
+  #viewer {
+    width:43.750em;
+    height:29em;
+  }
+}

@@ -12,8 +12,9 @@ layout: default
 		</div>
 	</div>
 </section>
-<!--
-{% include nav-chips.html %}
--->
+
+{% if page.navchips == "ok" %}
+	{% include nav-chips.html %}
+{% endif %}
 
 {{ content }}
