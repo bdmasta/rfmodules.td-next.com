@@ -275,27 +275,27 @@
   //background-attachment:fixed;
     .sdk-steps-inner {
         padding: 0 1.875em 0 1.875em;
-    }
 
-    .sdk-num {
-        position:relative;
-        width:5em;
-        height:5em;
-        margin: 0 auto 0 auto;
+      .sdk-num {
+          position:relative;
+          width:5em;
+          height:5em;
+          margin: 0 auto 0.625em auto;
 
-        border: 0.125em solid $grey-color-medium;
-        border-radius:50%;
+          border: 0.125em solid $grey-color-medium;
+          border-radius:50%;
 
-        .sdk-num-inner {
-            position:absolute;
-            top:50%;
-            left:50%;
-            font-size:2.500em;
-            color: $grey-color-medium;
-            transform: translateX(-50%) translateY(-50%);
-
+          .sdk-num-inner {
+              position:absolute;
+              top:50%;
+              left:50%;
+              font-size:2.500em;
+              color: $grey-color-medium;
+              transform: translateX(-50%) translateY(-50%);
+          }
         }
-    }
+        .sdk-steps-button {width:70%;}
+      }
 }
 
 
