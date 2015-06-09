@@ -224,10 +224,7 @@
         background-color:transparent;
     }
     }
-
 }
-
-
 
 .featurette{
     .featurette-img {
@@ -262,7 +259,15 @@
 
 
 
-
+.sdk-benefits {
+  background-color:#27262b;
+  i {color:#ffffff;}
+  .sdk-benefit-argument {
+    @include font-size(24px);
+    color:#ffffff;
+    margin-bottom:0em;
+  }
+}
 
 
 .sdk-steps {
