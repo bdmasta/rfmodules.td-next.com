@@ -6,6 +6,8 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic,900,900italic);
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic);
 @import url({{site.url}}/icons-tdnext/icons-tdnext.css);
+@import url({{site.url}}/css/magnific-popup.min.css);
+@import url({{site.url}}/css/animate.min.css);
 
 
 // Our variables
@@ -32,8 +34,8 @@ $grey-color-dark:  darken($grey-color, 25%);
 @import
 		"mixins",
 		"fonts",
-        "base",
-        "assets",
-        "tdmodules",
-        "syntax-highlighting"
+    "base",
+    "assets",
+    "tdmodules",
+    "syntax-highlighting"
 ;

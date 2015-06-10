@@ -372,3 +372,19 @@
         .sdk-steps-button {width:70%;}
       }
 }
+
+
+.tooltip.top {
+  .tooltip-inner {
+    padding:6px 16px;
+    background-color:$grey-color-dark;
+    color:#ffffff;
+    font-family:$base-font-family;
+    @include font-size(16px);
+    font-weight:300;
+  }
+    .tooltip-arrow {
+      border-top-color:$grey-color-dark;
+  }
+
+}
