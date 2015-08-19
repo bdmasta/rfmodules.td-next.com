@@ -1,19 +1,6 @@
-.topbar {
-  position:fixed;
-  top:0;
-  width:100%;
-  padding:0.500em 0 0.500em 0;
-  background-color: $grey-color-ultralight;
-  z-index:10000;
-
-  .topbar-inner {
-    @include font-size (12px);
-  }
-
-}
 
 .community {
-    background-color:$brand-color;
+    background-color:red;
     color:#ffffff;
     padding-bottom:0em;
 
@@ -42,95 +29,10 @@
 }
 
 
-/*----------NAVBAR----------*/
-
-.navbar-default {
-    margin-top:40px;
-    background-color: #ffffff;
-    border-color: transparent;
-    .navbar-brand {
-        color: $grey-color;
-        &:hover,
-        &:focus,
-        &:active,
-        &.active {
-            color: $brand-color;
-        }
-    }
-    .navbar-collapse {
-        border-color: fade(white, 2%);
-    }
-    .navbar-toggle {
-        background-color: $brand-color;
-        border-color: $brand-color;
-        .icon-bar {
-            background-color: white;
-        }
-        &:hover,
-        &:focus {
-            background-color: $brand-color;
-        }
-    }
-    .nav {
-        li {
-            a {
-                font-family: $base-font-family;
-                font-weight: 400;
-                letter-spacing: 1px;
-                color: $grey-color;
-                &:hover,
-                &:focus {
-                    color: $brand-color;
-                    outline: none;
-                }
-            }
-        }
-    }
-    .navbar-nav>.active>a {
-        border-radius: 0;
-        color: $brand-color;
-        background-color: transparent;
-    }
-    .navbar-nav>.active>a:hover,
-    .navbar-nav>.active>a:focus {
-        color: $brand-color;
-        background-color: transparent;
-    }
-}
-
-@media(min-width:768px) {
-    .navbar-default {
-        background-color: #ffffff;
-        padding: 25px 0;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        border-bottom:2px solid $grey-color-medium;
-        .navbar-brand {
-            font-size: 1.8em;
-            -webkit-transition: all 0.3s;
-            -moz-transition: all 0.3s;
-            transition: all 0.3s;
-        }
-        .navbar-nav>.active>a {
-            border-radius: 3px;
-        }
-    }
-    .navbar-default.navbar-shrink {
-        background-color: #ffffff;
-        padding: 10px 0;
-        .navbar-brand {
-            font-size: 1.5em;
-        }
-        border-bottom:1px solid $grey-color-light;
-    }
-}
-
-
 /*----------NAVBAR MODULES----------*/
 
 .nav-chips {
-    background-color:$brand-color;
+    background-color:red;
     li a {
         color:#ffffff;
         &:hover, &:active, &:focus {
@@ -148,11 +50,11 @@
 /*----------HOMEPAGE----------*/
 .news {
     padding: 1em 0 1em 0;
-    background-color:$brand-color;
+    background-color:red;
 
     h3 {
         margin:0em;
-        color:$brand-color;
+        color:red;
         }
 
     .last-news {
@@ -188,10 +90,10 @@
        //border-radius:8px;
     }
     .range-feature {
-        background-color:$grey-color-ultralight;
+        background-color:#f4f4f4;
     }
 
-    .fa-circle{color:$brand-color;}
+    .fa-circle{color:red;}
 }
 
 @media(min-width:768px) {
@@ -254,7 +156,7 @@
         height:3.750em;
         margin-left:auto;
         margin-right:auto;
-        border:0.125em solid $grey-color-medium;
+        border:0.125em solid #f4f4f4;
         border-radius:50%;
     }
 
@@ -270,7 +172,7 @@
     }
 
     .features-available {
-        border: 0.125em solid $brand-color;
+        border: 0.125em solid red;
     }
 }
 
@@ -279,10 +181,10 @@
       margin-top:3.125em;
       li a {
         @include font-size(24px);
-        color: $grey-color-medium;
+        color: #f4f4f4;
 
         &:hover, &:active, &:focus {
-          color:$brand-color;
+          color:red;
           text-decoration:none;
             }
         }
@@ -328,7 +230,7 @@
       padding:0.125em;
       border-radius:0.500em;
         &:hover, &:focus, .active {
-          background:$grey-color-light ;
+          background:#f4f4f4 ;
         }
     }
 }
@@ -357,7 +259,7 @@
           width:5em;
           height:5em;
           margin: 0 auto 0.625em auto;
-          border: 0.125em solid $grey-color-medium;
+          border: 0.125em solid #f4f4f4;
           border-radius:50%;
 
           .sdk-num-inner {
@@ -365,7 +267,7 @@
               top:50%;
               left:50%;
               font-size:2.500em;
-              color: $grey-color-medium;
+              color: #f4f4f4;
               transform: translateX(-50%) translateY(-50%);
           }
         }
@@ -377,14 +279,14 @@
 .tooltip.top {
   .tooltip-inner {
     padding:6px 16px;
-    background-color:$grey-color-dark;
+    background-color:grey;
     color:#ffffff;
-    font-family:$base-font-family;
+    font-family:arial;
     @include font-size(16px);
     font-weight:300;
   }
     .tooltip-arrow {
-      border-top-color:$grey-color-dark;
+      border-top-color:grey;
   }
 
 }
