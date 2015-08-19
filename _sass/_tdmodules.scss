@@ -50,8 +50,6 @@
 /*----------HOMEPAGE----------*/
 .news {
     padding: 1em 0 1em 0;
-    background-color:red;
-
     h3 {
         margin:0em;
         color:red;
@@ -63,50 +61,6 @@
         }
 }
 
-.partners {
-    .logo-partners {
-        margin:0.938em auto 0.938em auto;
-    }
-    .partners-header {
-        font-weight:300;
-    }
-}
-
-.range{
-    .range-inner {
-        //padding: 6.250em 0 6.250em 0;
-        //background-color:#ffffff;
-    }
-    .range-row{
-        margin: 2.5% 0 2.5% 0;
-    }
-    .range-cell{
-        line-height:5em;
-    }
-    .range-header{
-        //background-color:$grey-color-ultralight;
-        padding:4%;
-        @include font-size (18px);
-       //border-radius:8px;
-    }
-    .range-feature {
-        background-color:#f4f4f4;
-    }
-
-    .fa-circle{color:red;}
-}
-
-@media(min-width:768px) {
-    .range {
-        .range-header {
-            @include font-size (30px);
-        }
-
-         .range-feature {
-        background-color:transparent;
-      }
-    }
-}
 
 .featurette{
     .featurette-img {
