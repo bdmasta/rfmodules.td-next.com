@@ -47,7 +47,7 @@ jQuery(function($){
       imgViewer.html(loader);
       bigPic
         .load(function(){
-          imgViewer.html($(this).fadeIn(250));
+          imgViewer.html($(this).fadeIn(2000, 'swing'));
         })
         .attr("src",target);
     });

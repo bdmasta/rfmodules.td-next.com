@@ -1,0 +1,31 @@
+<!--
+<nav class="nav-modules bg-primary-color">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<ul class="list-unstyled list-inline">
+<li><a href="{{site.url}}/modules/td1207/" type="button" class="btn btn-white btn-l">TD1207</a></li>
+<li><a href="{{site.url}}/modules/td1208/" type="button" class="btn btn-white btn-l">TD1208</a></li>
+<li><a href="{{site.url}}/modules/td1204/" type="button" class="btn btn-white btn-l">TD1204</a></li>
+<li><a href="{{site.url}}/modules/td1205/" type="button" class="btn btn-white btn-l">TD1205</a></li>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+-->
+
+<nav class="nav-modules bg-primary-color">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<ul class="nav nav-pills modules-pills">
+					<li role="presentation" class="{% if page.module == 'td1207' %}active{% endif %}"><a href="{{site.url}}/modules/td1207/"><span class="td">TD'</span> 1207</a></li>
+					<li role="presentation" class="{% if page.module == 'td1208' %}active{% endif %}"><a href="{{site.url}}/modules/td1208/"><span class="td">TD'</span> 1208</a</li>
+					<li role="presentation" class="{% if page.module == 'td1204' %}active{% endif %}"><a href="{{site.url}}/modules/td1204/"><span class="td">TD'</span> 1204</a></li>
+					<li role="presentation" class="{% if page.module == 'td1205' %}active{% endif %}"><a href="{{site.url}}/modules/td1205/"><span class="td">TD'</span> 1205</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>

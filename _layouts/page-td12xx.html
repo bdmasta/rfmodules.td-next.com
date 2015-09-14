@@ -2,72 +2,105 @@
 layout: default
 ---
 
-{% include nav-chips.html %}
-<section class="modules-header">
-	<div class="container">
-		<div class="col-md-6">
-			<img class="img-responsive" style="width:480px; height:500px;" src="{{page.img-td12xx}}"></img>
-		</div>
-		<div class="col-md-6">
-			<div class="row">
-				<div class="col-md-12">
-					<h1>{{page.h1}}</h1>
-				</div>
+{% include nav-modules.html %}
+
+
+<header class="module-sheet">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 wide">
+				<img class="img-responsive" src="{{page.img-td12xx}}"></img>
 			</div>
-			<div class="row features">
-				<div class="col-md-3 col-xs-3">
-					<div class="features-icon {% if page.sigfox == 'ok' %}features-available{% endif %}"><i class=" fa fa-butterfly fa-2x fa-features"></i></div><div class="features-caption text-center">Sigfox certified</div>
+			<div class="col-md-4 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="module-sheet-heading">{{page.h1}}</h1>
+					</div>
 				</div>
-				<div class="col-md-3 col-xs-3">
-					<div class="features-icon {% if page.sdk == 'ok' %}features-available{% endif %}"><i class=" fa fa-code fa-2x fa-features"></i></div><div class="features-caption text-center">Kit SDK</div>
+				<div class="row">
+					<div class="col-md-3 col-xs-3">
+						<div class="sheet-feature-icon {% if page.sigfox == 'ok' %}feature-sigfox{% else %}feature-sigfox-unavailable{% endif %}"></div>
+						<div class="sheet-feature-caption {% if page.sigfox == 'ok' %}primary-color{% else %}second-color{% endif %} text-center">Sigfox certified</div>
+					</div>
+					<div class="col-md-3 col-xs-3">
+						<div class="sheet-feature-icon {% if page.sdk == 'ok' %}feature-sdk{% else %}feature-sdk-unavailable{% endif %}"></div>
+						<div class="sheet-feature-caption {% if page.sdk == 'ok' %}primary-color{% else %}second-color{% endif %} text-center">Kit SDK</div>
+					</div>
+					<div class="col-md-3 col-xs-3">
+						<div class="sheet-feature-icon {% if page.gps == 'ok' %}feature-gps{% else %}feature-gps-unavailable{% endif %}"></div>
+						<div class="sheet-feature-caption {% if page.gps == 'ok' %}primary-color{% else %}second-color{% endif %} text-center">GPS</div>
+					</div>
+					<div class="col-md-3 col-xs-3">
+						<div class="sheet-feature-icon {% if page.antenna == 'ok' %}feature-antenna{% else %}feature-antenna-unavailable{% endif %}"></div>
+						<div class="sheet-feature-caption {% if page.antenna == 'ok' %}primary-color{% else %}second-color{% endif %} text-center">Integrated antennas</div>
+					</div>
 				</div>
-				<div class="col-md-3 col-xs-3">
-					<div class="features-icon {% if page.gps == 'ok' %}features-available{% endif %}"><i class=" fa fa-geolocation fa-2x fa-features"></i></div><div class="features-caption text-center">GPS</div>
-				</div>
-				<div class="col-md-3 col-xs-3">
-					<div class="features-icon {% if page.antenna == 'ok' %}features-available{% endif %}"><i class=" fa fa-wireless fa-2x fa-features"></i></div><div class="features-caption text-center">Integrated antennas</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					{{page.subtitle}}
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="module-sheet-description">{{page.subtitle}}</h2>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</section>
+</header>
 
-<section class="bg-grey toolbox">
-
-
-
-
-
+<section class="bg-second-color module-toolbox">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<i class="fa fa-cloud fa-5x"></i>
+				<div class="decoration-down"></div>
 			</div>
 		</div>
-
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<div class="col-md-6 col-xs-12">
-					<ul class="list-unstyled pull-right toolbox-links">
-						<li><a href="{% if page.datasheet %} {{page.datasheet}} {% else %} # {% endif %}">Datasheet</a></li>
-						<li><a href="{% if page.datashort %} {{page.datashort}} {% else %} # {% endif %}">Product brief</a></li>
-						<li><a href="{% if page.userguide %} {{page.userguide}} {% else %} # {% endif %}">EVB user guide</a></li>
-					</ul>
-				</div>
-
-				<div class="col-md-6 col-xs-12">
-					<ul class="list-unstyled toolbox-links">
-						<li><a href="{% if page.refmanual %} {{page.refmanual}} {% else %} # {% endif %}">Ref. manual</a></li>
-						<li><a href="{% if page.binary %} {{page.binary}} {% else %} # {% endif %}">Binary firmware</a></li>
-						<li><a href="{% if page.imgloader %} {{page.imgloader}} {% else %} # {% endif %}">Image loader</a></li>
-					</ul>
+			<div class="col-md-6">
+				<img class="img-responsive" src="https://s3-eu-west-1.amazonaws.com/assetstdnext/img/toolbox@2x.png">
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+					<div class="col-md-6">
+						<ul class="list-unstyled module-toolbox-btn">
+							<li><a href="#" role="button" class="btn btn-white btn-l btn-block btn-toolbox">Datasheet</a></li>
+							<li><a href="#" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Product brief</a></li>
+							<li><a href="#" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">EVB User guide</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<ul class="list-unstyled  module-toolbox-btn">
+							<li><a href="#" role="button" class="btn btn-white btn-l btn-block btn-toolbox">Réf. manual</a></li>
+							<li><a href="#" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Binary firmware</a></li>
+							<li><a href="#" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Image loader</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!--
+		<div class="row">
+		<div class="col-md-12 text-center">
+		<i class="fa fa-cloud fa-5x"></i>
 	</div>
+</div>
+
+<div class="row">
+<div class="col-md-10 col-md-offset-1">
+<div class="col-md-6 col-xs-12">
+<ul class="list-unstyled pull-right toolbox-links">
+<li><a href="{% if page.datasheet %} {{page.datasheet}} {% else %} # {% endif %}">Datasheet</a></li>
+<li><a href="{% if page.datashort %} {{page.datashort}} {% else %} # {% endif %}">Product brief</a></li>
+<li><a href="{% if page.userguide %} {{page.userguide}} {% else %} # {% endif %}">EVB user guide</a></li>
+</ul>
+</div>
+
+<div class="col-md-6 col-xs-12">
+<ul class="list-unstyled toolbox-links">
+<li><a href="{% if page.refmanual %} {{page.refmanual}} {% else %} # {% endif %}">Ref. manual</a></li>
+<li><a href="{% if page.binary %} {{page.binary}} {% else %} # {% endif %}">Binary firmware</a></li>
+<li><a href="{% if page.imgloader %} {{page.imgloader}} {% else %} # {% endif %}">Image loader</a></li>
+</ul>
+</div>
+</div>
+</div>
+-->
+</div>
 </section>

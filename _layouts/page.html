@@ -7,14 +7,14 @@ layout: default
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1 class="page-title text-center">{{page.h1}}</h1>
+				<h1 class="basic-page-title text-center">{{page.h1}}</h1>
 			</div>
 		</div>
 	</div>
 </section>
 
 {% if page.navchips == "ok" %}
-	{% include nav-chips.html %}
+	{% include nav-modules.html %}
 {% endif %}
 
 {{ content }}
