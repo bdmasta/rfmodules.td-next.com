@@ -1,5 +1,5 @@
 .hero-offer {
-  @include cover-background ('../img/bg-hero-header.png');
+  @include cover-background ('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-hero-sigfox-modules.jpg');
 
   .down-bounce {margin:auto;}
 }
