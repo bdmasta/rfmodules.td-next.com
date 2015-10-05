@@ -1,5 +1,5 @@
 .hero-offer {
-  @include cover-background ('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-hero-sigfox-modules.jpg');
+  @include cover-background ('//assetstdnext.s3.amazonaws.com/img/bg-hero-sigfox-modules.jpg');
 
   .down-bounce {margin:auto;}
 }
@@ -16,42 +16,43 @@
 
 .range {
   padding-bottom:0;
-  @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-family-sigfox-modules@2x', png);
+  @include at2x('//assetstdnext.s3.amazonaws.com/img/bg-family-sigfox-modules@2x', png);
   background-position: center bottom;
 
   .range-tag {
     height: 7.500em;
     width: 7.500em;
+
     margin-left:auto;
     margin-right:auto;
     margin-bottom:-4.2em;
     background-repeat:no-repeat;
     background-size: 120px 120px;
 
-    @include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/tag-td1207@2x', png);
+    @include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207@2x', png);
   }
 
-  #tag-td1207 {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/tag-td1207@2x', png);}
-  #tag-td1208 {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/tag-td1208@2x', png);}
-  #tag-td1508 {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/tag-td1508@2x', png);}
-  #tag-td1204 {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/tag-td1204@2x', png);}
-  #tag-td1208 {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/tag-td1208@2x', png);}
+  #tag-td1207 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207@2x', png);}
+  #tag-td1208 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1208@2x', png);}
+  #tag-td1508 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1508@2x', png);}
+  #tag-td1204 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1204@2x', png);}
+  #tag-td1205 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1205@2x', png);}
 }
 
 
 
-.feature-sigfox {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-sigfox', png);}
-.feature-evb {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-evb', png);}
-.feature-sdk {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-sdk', png);}
-.feature-gps {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-gps', png);}
-.feature-antenna {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-antenna', png);}
-.feature-none {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-line', png);}
+.feature-sigfox {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-sigfox', png);}
+.feature-evb {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-evb', png);}
+.feature-sdk {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-sdk', png);}
+.feature-gps {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-gps', png);}
+.feature-antenna {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-antenna', png);}
+.feature-none {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-line', png);}
 
-.feature-sigfox-unavailable {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-sigfox-grey', png);}
-.feature-evb-unavailable {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-evb-grey', png);}
-.feature-sdk-unavailable {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-sdk-grey', png);}
-.feature-gps-unavailable {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-gps-grey', png);}
-.feature-antenna-unavailable {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-antenna-grey', png);}
+.feature-sigfox-unavailable {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-sigfox-grey', png);}
+.feature-evb-unavailable {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-evb-grey', png);}
+.feature-sdk-unavailable {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-sdk-grey', png);}
+.feature-gps-unavailable {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-gps-grey', png);}
+.feature-antenna-unavailable {@include at2x('//assetstdnext.s3.amazonaws.com/img/icon-antenna-grey', png);}
 
 .family-features {
 
@@ -90,11 +91,9 @@
   }
 }
 
-.featurette-img {
-  width:400px;
-}
 
-#pattern-butterfly {@include at2x('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-butterfly@2x', png);}
+
+#pattern-butterfly {@include at2x('//assetstdnext.s3.amazonaws.com/img/bg-butterfly@2x', png);}
 
 .module-sheet {
   padding-bottom:0;
@@ -180,45 +179,6 @@
 
 /*----------TD12xx----------*/
 
-.nav-modules {
-  padding:0.625em 0;
-  z-index:2000;
-  .modules-pills {
-    li {
-      a {
-        margin:0.227em;
-        padding: 0.0227em 0.682em;
-        border:0.091em solid #ffffff;
-        border-radius: 3.125em;
-        -moz-border-radius: 3.125em;
-        -webkit-border-radius: 3.125em;
-        @include font-size(22px);
-        color:#ffffff;
-        font-weight:500;
-        opacity:0.6;
-
-        .td {font-weight:500;}
-
-        &:hover, &:focus {
-          background-color:#ffffff;
-          color:#8d8c8e;
-          opacity:1;
-          .td {color:#e32a48;}
-        }
-      }
-    }
-    li.active {
-      a {
-        background-color:#ffffff;
-        color:#8d8c8e;
-        opacity:1;
-        .td {color:#e32a48;}
-      }
-    }
-  }
-}
-
-
 .module-toolbox {
   .module-toolbox-btn {
     margin:0px;
@@ -253,31 +213,73 @@
 
   .evb-choice {
     display:block;
+
     padding: 7.500em 0;
 
     &:hover {
-      background-size:110% 110%;
+      -webkit-animation: animatedBackground 1s ease-out 1;
+      -moz-animation: animatedBackground 1s ease-out 1;
+      animation: animatedBackground 1s ease-out 1;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
     }
   }
-
+  @-webkit-keyframes animatedBackground {
+  0% {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1)
+  }
+  100% {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1)
+  }
+  }
+  @-moz-keyframes animatedBackground {
+  0% {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1)
+  }
+  100% {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1)
+  }
+  }
+  @keyframes animatedBackground {
+  0% {
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1)
+  }
+  100% {
+  -webkit-transform: scale(1.1, 1.1);
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1)
+  }
+  }
   .evb-choice-left {
-    @include cover-background('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/evb-choice-left.jpg');
-    background-size:100% 100%;
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -o-transition: all 1s ease; /* IE 9 */
-    -ms-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
+    @include cover-background('//assetstdnext.s3.amazonaws.com/img/evb-choice-left.jpg');
+
   }
 
   .evb-choice-right {
-    @include cover-background('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/evb-choice-right.jpg');
-    background-size:100% 100%;
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -o-transition: all 1s ease; /* IE 9 */
-    -ms-transition: all 1s ease; /* Opera */
-    transition: all 1s ease;
+    @include cover-background('//assetstdnext.s3.amazonaws.com/img/evb-choice-right.jpg');
+
   }
 
   .evb-choice-inner {
@@ -308,7 +310,7 @@
         height:64px;
         background-size:64px 64px;
         background-repeat:no-repeat;
-        @include at2x("https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-evb@2x", png)
+        @include at2x("//assetstdnext.s3.amazonaws.com/img/icon-evb@2x", png)
       }
 
       .evb-choice-icon-grey:after {
@@ -319,7 +321,7 @@
         height:64px;
         background-size:64px 64px;
         background-repeat:no-repeat;
-        @include at2x("https://s3-eu-west-1.amazonaws.com/assetstdnext/img/icon-evb-grey@2x",png)
+        @include at2x("//assetstdnext.s3.amazonaws.com/img/icon-evb-grey@2x",png)
       }
     }
   }
@@ -564,6 +566,7 @@
 .idea {
   padding:19% 0 30% 0;
   position:relative;
+  border-bottom:0.063em solid #ffffff;
   .idea-down {
     position:absolute;
     top:5%;
@@ -580,6 +583,7 @@
     -moz-border-radius: 3.125em;
     -webkit-border-radius:3.125em;
     border-radius: 3.125em;
+    text-transform:uppercase;
   }
 }
 
@@ -589,7 +593,7 @@
       display:inline-block;
       margin:0;
       padding:0.172em  0.517em;
-      @include font-size(58px);
+      @include font-size(72px);
       color:#ffffff;
       font-weight:300;
       -moz-border-radius: 3.125em;
@@ -599,9 +603,9 @@
   }
 }
 
-.idea-security {@include cover-background('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-security.jpg'); background-position:center top;}
-.idea-tracking {@include cover-background('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-tracking.jpg'); background-position:center top;}
-.idea-farming {@include cover-background('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-farming.jpg'); background-position:center top;}
-.idea-environment {@include cover-background('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-environment.jpg'); background-position:center top;}
-.idea-smartcity{@include cover-background('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-smartcity.jpg'); background-position:center top;}
-.idea-health {@include cover-background('https://s3-eu-west-1.amazonaws.com/assetstdnext/img/bg-health.jpg'); background-position:center top;}
+.idea-security {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-security.jpg'); background-position:center top;padding-top:17%;padding-bottom:25%;}
+.idea-tracking {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-tracking.jpg'); background-position:center top;padding-top:22%;padding-bottom:20%;}
+.idea-farming {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-farming.jpg'); background-position:center top;padding-top:24%;padding-bottom:18%;}
+.idea-environment {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-environment.jpg'); background-position:center top;padding-top:23%;padding-bottom:22%;}
+.idea-smartcity{@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-smartcity.jpg'); background-position:center top;}
+.idea-health {@include cover-background('//assetstdnext.s3.amazonaws.com/img/bg-health.jpg'); background-position:center top;padding-top:21%;padding-bottom:22%;}

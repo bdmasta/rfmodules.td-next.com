@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include nav-modules.html %}
+{% include modules-pills.html %}
 
 
 <header class="module-sheet">
@@ -60,16 +60,16 @@ layout: default
 				<div class="row">
 					<div class="col-md-6">
 						<ul class="list-unstyled module-toolbox-btn">
-							<li><a href="#" role="button" class="btn btn-white btn-l btn-block btn-toolbox">Datasheet</a></li>
-							<li><a href="#" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Product brief</a></li>
-							<li><a href="#" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">EVB User guide</a></li>
+							<li><a href="{% if page.datasheet %} {{page.datasheet}} {% else %} # {% endif %}" role="button" class="btn btn-white btn-l btn-block btn-toolbox">Datasheet</a></li>
+							<li><a href="{% if page.datashort %} {{page.datashort}} {% else %} # {% endif %}" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Product brief</a></li>
+							<li><a href="{% if page.userguide %} {{page.userguide}} {% else %} # {% endif %}" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">EVB User guide</a></li>
 						</ul>
 					</div>
 					<div class="col-md-6">
 						<ul class="list-unstyled  module-toolbox-btn">
-							<li><a href="#" role="button" class="btn btn-white btn-l btn-block btn-toolbox">Réf. manual</a></li>
-							<li><a href="#" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Binary firmware</a></li>
-							<li><a href="#" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Image loader</a></li>
+							<li><a href="{% if page.refmanual %} {{page.refmanual}} {% else %} # {% endif %}" role="button" class="btn btn-white btn-l btn-block btn-toolbox">Réf. manual</a></li>
+							<li><a href="{% if page.binary %} {{page.binary}} {% else %} # {% endif %}" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Binary firmware</a></li>
+							<li><a href="{% if page.imgloader %} {{page.imgloader}} {% else %} # {% endif %}" role="button" class="btn btn-white btn-l  btn-block btn-toolbox">Image loader</a></li>
 						</ul>
 					</div>
 				</div>
