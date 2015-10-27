@@ -4,7 +4,7 @@ title: TD next • EVB get started with the Sigfox technology
 excerpt: EVB is the best way to test and use TD next's Sigfox modules by sending AT commands
 name: evb
 permalink: /evb/
-h1: <span class="page-title-box">Evaluate</span> the Sigfox technology by sending <br>simple AT commands!
+h1: <span class="page-title-box">Evaluate</span> the SIGFOX technology by sending <br>simple AT commands!
 ---
 
 <section class="evb-owner">
@@ -131,7 +131,7 @@ h1: <span class="page-title-box">Evaluate</span> the Sigfox technology by sendin
 					</li>
 					<li class="evb-tool-inner">
 						<img class="evb-tool-icon img-responsive img-center" src="//assetstdnext.s3.amazonaws.com/img/icon-fdti@2x.png" alt="FTDI icon">
-						<p class="evb-tool-description">1 FDTI cable</p>
+						<p class="evb-tool-description">1 FTDI cable</p>
 
 					</li>
 					<li class="evb-tool-inner">
@@ -170,7 +170,7 @@ h1: <span class="page-title-box">Evaluate</span> the Sigfox technology by sendin
 				<h4 class="evb-step-subtitle">On Linux OS</h4>
 				<p class="evb-step-text">Latest common distros (debian based) comes with FTDI drivers installed, so one can get to step 2, or check this site for more information.</p>
 				<h4 class="evb-step-subtitle">On Mac OS</h4>
-				<p class="evb-step-text">Install the latest fdti VPC driver by downloading the bundle image available here. No restart required.</p>
+				<p class="evb-step-text">Install the latest FTDI VPC driver by downloading the bundle image available here. No restart required.</p>
 				<h4 class="evb-step-subtitle">On WinX</h4>
 				<p class="evb-step-text">Install the latest fdti VPC driver by downloading the install exe available here.</p>
 			</div>
@@ -222,9 +222,9 @@ ACTIVE PROFILE
 E1 V1 Q0 X1 S200:0 S300:24 S301:2 S302:14 S303:1
 OK
 {% endhighlight %}
-				<h4 class="evb-step-subtitle">Send "Hello" to mobile 0601020304</h4>
+				<h4 class="evb-step-subtitle">Send "Hello" to mobile 06xxxxxxxx</h4>
 {% highlight ruby %}
-AT$DP=1,0601020304
+AT$DP=1,06xxxxxxxx
 OK
 AT$SSMS=Hello
 OK
