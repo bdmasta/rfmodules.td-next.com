@@ -1,0 +1,41 @@
+---
+layout: page
+title: Let's get started
+excerpt: Let the magic play
+name: evb
+permalink: /evb/quickstart.html
+---
+
+<section>
+	<div class="container">
+		<div class="row wide">
+      <div class="col-xs-6">
+          <div id="wizard">
+              <h1>What is your product ?</h1>
+              <div>
+                <label for="id">Id</label>
+                <input type="text" id="id" class="form-control" placeholder="Produdct Id">
+                <label for="id">Key</label>
+                <input type="text" id="key" class="form-control" placeholder="Key">
+              </div>
+              <h1>Tell us more about you</h1>
+              <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" class="form-control" placeholder="Disabled input">
+              </div>
+              <h1>Plug and Press</h1>
+              <div>
+                  Power the board and press the button until you see the led on.
+              </div>
+          </div>
+		  </div>
+    </div>
+  </div>
+</div>
+</section>
+<script src="{{site.url}}/js/jquery.steps.min.js" type="text/javascript"></script>
+<script>
+$(function () {
+  $('div#wizard').steps();
+});
+</script>
