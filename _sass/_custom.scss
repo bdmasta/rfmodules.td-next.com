@@ -16,7 +16,7 @@
 
 .range {
   padding-bottom:0;
-  @include at2x('//assetstdnext.s3.amazonaws.com/img/bg-family-sigfox-modules@2x', png);
+  @include at2x('//assetstdnext.s3.amazonaws.com/img/bg-family-sigfox-modules', png);
   background-position: center bottom;
 
   .range-tag {
@@ -29,14 +29,14 @@
     background-repeat:no-repeat;
     background-size: 120px 120px;
 
-    @include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207@2x', png);
+    @include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207', png);
   }
 
-  #tag-td1207 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207@2x', png);}
-  #tag-td1208 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1208@2x', png);}
-  #tag-td1508 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1508@2x', png);}
-  #tag-td1204 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1204@2x', png);}
-  #tag-td1205 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1205@2x', png);}
+  #tag-td1207 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207', png);}
+  #tag-td1208 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1208', png);}
+  #tag-td1508 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1508', png);}
+  #tag-td1204 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1204', png);}
+  #tag-td1205 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1205', png);}
 }
 
 
@@ -93,7 +93,7 @@
 
 
 
-#pattern-butterfly {@include at2x('//assetstdnext.s3.amazonaws.com/img/bg-butterfly@2x', png);}
+#pattern-butterfly {@include at2x('//assetstdnext.s3.amazonaws.com/img/bg-butterfly', png);}
 
 .module-sheet {
   padding-bottom:0;
@@ -310,7 +310,7 @@
         height:64px;
         background-size:64px 64px;
         background-repeat:no-repeat;
-        @include at2x("//assetstdnext.s3.amazonaws.com/img/icon-evb@2x", png)
+        @include at2x("//assetstdnext.s3.amazonaws.com/img/icon-evb", png , 64px, 64px);
       }
 
       .evb-choice-icon-grey:after {
@@ -321,7 +321,7 @@
         height:64px;
         background-size:64px 64px;
         background-repeat:no-repeat;
-        @include at2x("//assetstdnext.s3.amazonaws.com/img/icon-evb-grey@2x",png)
+        @include at2x("//assetstdnext.s3.amazonaws.com/img/icon-evb-grey",png, 64px, 64px);
       }
     }
   }
