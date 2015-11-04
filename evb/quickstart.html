@@ -7,57 +7,60 @@ permalink: /evb/quickstart.html
 ---
 
 <section style="padding-top:0;margin-top:-6.250em;">
-	<div class="container-fluid">
-		<div class="row">
-      <div class="col-md-12">
-          <div id="wizard">
-              <h2>What is your product ?</h2>
-              <div>
-                <label for="id">Id</label>
-                <input type="text" id="id" class="form-control" placeholder="Produdct Id">
-                <label for="id">Key</label>
-                <input type="text" id="key" class="form-control" placeholder="Key">
-              </div>
-              <h2>Tell us more about you</h2>
-              <div>
-                <label for="phone">Phone</label>
-                <input type="text" id="phone" class="form-control" placeholder="Disabled input">
-              </div>
-              <h2>Plug and Press</h2>
-              <div>
-                  Power the board and press the button until you see the led on.
-              </div>
-          </div>
-		  </div>
-    </div>
-  </div>
-</section>
-
-<section>
-	<div id="example-vertical">
-    <h3>Keyboard</h3>
+	<div id="wizard">
+		<h3>What</h3>
     <section>
-        <p>Try the keyboard navigation by clicking arrow left or right!</p>
+			<div>
+				<h2>EVB Information</h2>
+				<label for="id">Id</label>
+				<input type="text" id="id" class="form-control" placeholder="Produdct Id">
+				<label for="id">Key</label>
+				<input type="text" id="key" class="form-control" placeholder="Key">
+			</div>
     </section>
-    <h3>Effects</h3>
+		<h3>Who</h3>
     <section>
-        <p>Wonderful transition effects.</p>
+			<div>
+				<h2>Tell us more about you</h2>
+				<label for="phone">Phone</label>
+				<input type="text" id="phone" class="form-control" placeholder="Phone">
+			</div>
     </section>
-    <h3>Pager</h3>
+		<h3>Where</h3>
     <section>
-        <p>The next and previous buttons help you to navigate through your content.</p>
+			<h2>Plug and Press</h2>
+			<div>
+					Power the board and press the button until you see the led on.
+			</div>
     </section>
 </div>
 </section>
 <script src="{{site.url}}/js/jquery.steps.min.js" type="text/javascript"></script>
 <script>
 $(function () {
-  $('div#wizard').steps();
-	$("#example-vertical").steps({
+
+	function getParameterByName(name) {
+	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	        results = regex.exec(location.search);
+	    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+
+	$("#wizard").steps({
     headerTag: "h3",
     bodyTag: "section",
     transitionEffect: "slideLeft",
     stepsOrientation: "vertical"
-});
+	});
+
+	var product_id = getParameterByName('id');
+	var product_key = getParameterByName('key');
+
+	if (product_id && product_key) {
+		$('#id').val(product_id)
+		$('#key').val(product_key)
+		$("#wizard").steps('next')
+	}
+
 });
 </script>
