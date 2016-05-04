@@ -273,13 +273,11 @@
   }
   }
   .evb-choice-left {
-    @include cover-background('//assetstdnext.s3.amazonaws.com/img/evb-choice-left.jpg');
-
+    @include cover-background('//assetstdnext.s3.amazonaws.com/img/td7740-choice-left.jpg');
   }
 
   .evb-choice-right {
-    @include cover-background('//assetstdnext.s3.amazonaws.com/img/evb-choice-right.jpg');
-
+    @include cover-background('//assetstdnext.s3.amazonaws.com/img/td7740-choice-left.jpg');
   }
 
   .evb-choice-inner {
