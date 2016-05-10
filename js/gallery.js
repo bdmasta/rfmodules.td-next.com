@@ -6,7 +6,7 @@ jQuery(function($){
     activeClass: "active",
     activeTitle: "Photo en cours de visualisation",
     loaderTitle: "Chargement en cours",
-    loaderImage: "../img/gallery/loader.gif"
+    //loaderImage: "../img/gallery/loader.gif"
   };
 
   var thumbLinks = $("#"+settings.thumbListId).find("a"),
