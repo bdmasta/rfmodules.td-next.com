@@ -32,8 +32,8 @@
     @include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207', png);
   }
 
-  #tag-td1207 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207', png);}
-  #tag-td1208 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1208', png);}
+  #tag-td1207r {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1207r', png);}
+  #tag-td1208r {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1208r', png);}
   #tag-td1508 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1508', png);}
   #tag-td1204 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1204', png);}
   #tag-td1205 {@include at2x('//assetstdnext.s3.amazonaws.com/img/tag-td1205', png);}
@@ -61,6 +61,15 @@
   .feature-inner {
     background-color:#ffffff;
     padding-bottom:3.125em;
+
+    .old-version {
+      margin-top:0.938em;
+      color:#545659;
+      &:hover {
+        color:#e32a48;
+        text-decoration:underline;
+      }
+    }
   }
 
   .feature-inner-table {
